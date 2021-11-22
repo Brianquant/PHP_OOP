@@ -21,8 +21,8 @@ class Bestellung {
             // Nicht innnerhalb der Zeichenkette
             $ausgabe .= "Posten " . ($i + 1) . ": " . $this->posten[$i] . "<br>";
             $gesamt += $this->posten[$i]->postenpreis();
-            
         }
+        
         $deliver = "";
         $deliver .= $this->delivery->deliver();
         $ausgabe .= "Gesamtpreis: $gesamt &euro;<br> Status: $deliver";
